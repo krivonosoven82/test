@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>test</title>
+  <link rel="stylesheet" href="./css/font-awesome.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="wrap__container">
+      <div class="wrap__content">
+        <div class="header">
+          <p class="header__title">Select currency to exhange:</p>
+          <select name="sources" id="sources" class="custom-select sources" placeholder="USD">
+            <option value="USD" class="header__option">USD</option>
+            <option value="EUR" class="header__option">EUR</option>
+            <option value="RUB" class="header__option">RUB</option>
+            <option value="GBP" class="header__option">GBP</option>
+          </select>
+          <div class="header__overlay"></div>
+        </div>
+        <div class="body-section">
+          <div class="body-section__card card card--green">
+            <div class="card__item">
+              <div class="card__overlay"></div>
+              <p class="card__title">Ethereum</p>
+              <div class="card__img card__img--filter">
+                <img class="img" src="./img/ethereum.png" alt="Ethereum">
+              </div>
+            </div>
+            <div class="card__item card__item--bottom">
+              <p class="card__info">
+                <span class="card__price">Price:</span>
+                <span class="card__price">$22
+                  <span class="card__price card__price--ml">526.92</span>
+                </span>
+              </p>
+              <p class="card__info">
+                <span class="card__percent">Percent change</span>
+                <input type="checkbox" class="checkbox" id="checkbox-green" />
+                <label for="checkbox-green"></label>
+              </p>
+              <p class="card__info">
+                <span class="card__data">Hour change</span>
+                <span class="card__change card__change--green">+266%</span>
+              </p>
+              <p class="card__info">
+                <span class="card__data">Day change</span>
+                <span class="card__change card__change--green">+266%</span>
+              </p>
+              <p class="card__info">
+                <span class="card__data">Week change</span>
+                <span class="card__change card__change--green">+266%</span>
+              </p>
+              <p class="card__info">
+                <span class="card__data">Month change</span>
+                <span class="card__change card__change--green">+266%</span>
+              </p>
+            </div>
+          </div>
+          <div class="body-section__card card card--gray">
+
+            <div class="card__item">
+              <div class="card__overlay"></div>
+              <p class="card__title">Litecoin</p>
+              <div class="card__img card__img--filter">
+                <img class="img" src="./img/litecoin.png" alt="litecoin">
+              </div>
+            </div>
+            <div class="card__item card__item--bottom">
+              <p class="card__info">
+                <span class="card__price">Price:</span>
+                <span class="card__price">$22
+                  <span class="card__price card__price--ml">526.92</span>
+                </span>
+              </p>
+              <p class="card__info">
+                <span class="card__percent">Percent change</span>
+                <input type="checkbox" class="checkbox" id="checkbox-gray" />
+                <label for="checkbox-gray"></label>
+              </p>
+              <p class="card__info">
+                <span class="card__data">Hour change</span>
+                <span class="card__change card__change--green">+266%</span>
+              </p>
+              <p class="card__info">
+                <span class="card__data">Day change</span>
+                <span class="card__change card__change--green">+266%</span>
+              </p>
+              <p class="card__info">
+                <span class="card__data">Week change</span>
+                <span class="card__change card__change--green">+266%</span>
+              </p>
+              <p class="card__info">
+                <span class="card__data">Month change</span>
+                <span class="card__change card__change--green">+266%</span>
+              </p>
+            </div>
+          </div>
+          <div class="body-section__card card card--gold">
+            <div class="card__item">
+              <div class="card__overlay"></div>
+              <p class="card__title">Bitcoin</p>
+              <div class="card__img">
+                <img class="img" src="./img/bitcoin.png" alt="bitcoin">
+              </div>
+            </div>
+            <div class="card__item card__item--bottom">
+              <p class="card__info">
+                <span class="card__price">Price:</span>
+                <span class="card__price">$22
+                  <span class="card__price card__price--ml">526.92</span>
+                </span>
+              </p>
+              <p class="card__info">
+                <span class="card__percent">Percent change</span>
+                <input type="checkbox" class="checkbox" id="checkbox-gold" />
+                <label for="checkbox-gold"></label>
+              </p>
+              <p class="card__info">
+                <span class="card__data">Hour change</span>
+                <span class="card__change card__change--green">+26$</span>
+              </p>
+              <p class="card__info">
+                <span class="card__data">Day change</span>
+                <span class="card__change card__change--red">-20$</span>
+              </p>
+              <p class="card__info">
+                <span class="card__data">Week change</span>
+                <span class="card__change card__change--green">+26$</span>
+              </p>
+              <p class="card__info">
+                <span class="card__data">Month change</span>
+                <span class="card__change card__change--green">+26$</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>

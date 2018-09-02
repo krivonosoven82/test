@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+body {
+  min-width: 320px;
+  position: relative;
+  font-size: 14px;
+  font-family: 'Roboto', 'Open Sans', 'ionicons', 'fontawesome-webfont', sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  overflow-x: hidden;
+  background-color: #1b232b;
+  &.hidden {
+      overflow: hidden;
+  }
+}
+
+input {
+  required: valid;
+  outline: none;
+  @include transition(0.5s);
+  &:focus {
+      required: invalid;
+  }
+}
+textarea {
+  required: valid;
+  outline: none;
+  @include transition(0.5s);
+  &:focus {
+    required: invalid;
+  }
+}
+
+button,
+input[type='submit'] {
+  cursor: pointer;
+  @include transition(0.5s);
+  background: transparent;
+  &:focus,
+  &:active {
+      outline: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  @include transition(0.5s);
+  &:hover {
+      text-decoration: none;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+//-----------.wrap
+.wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #282828;
+  &__container{
+    width: 100%;
+    max-width: 1920px;
+    height: 718px;
+    padding: 70px 15px 0;
+    background: url("../../img/bg.jpg") no-repeat;
+    background-size: cover;
+    @media(max-width: 960px){
+      height: 100%;
+      @media(max-width: 420px){
+        padding: 20px 5px;
+      }
+    }
+  }
+  &__content{
+    width: 100%;
+    max-width: 984px;
+    margin: 0 auto;
+  }
+}
+.img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
